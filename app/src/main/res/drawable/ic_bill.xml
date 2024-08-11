@@ -8,19 +8,16 @@
       android:strokeWidth="2"
       android:pathData="M4,2h16c1.1,0 2,0.9 2,2v16c0,1.1 -0.9,2 -2,2H4c-1.1,0 -2,-0.9 -2,-2V4c0,-1.1 0.9,-2 2,-2z" />
 
-  <!-- Top Line with White Outline -->
   <path
       android:strokeColor="#FFFFFF"
       android:strokeWidth="1"
       android:pathData="M6,6h12v2H6z" />
 
-  <!-- Middle Line with White Outline -->
   <path
       android:strokeColor="#FFFFFF"
       android:strokeWidth="1"
       android:pathData="M6,10h12v2H6z" />
 
-  <!-- Bottom Line with White Outline -->
   <path
       android:strokeColor="#FFFFFF"
       android:strokeWidth="1"
