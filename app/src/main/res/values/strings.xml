@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name" translatable="false">Finance</string>
+    <string name="title_activity_splash" translatable="false">SplashActivity</string>
+    <string name="database_name" translatable="false">database</string>
+    <string name="about">a simple app to manage your finances</string>
+    <string name="github_url" translatable="false">https://github.com/nursyah21/financeapp-android</string>
+    <string name="kofi_url" translatable="false">https://ko-fi.com/nursyahjaya</string>
+    <string name="trakteer_url" translatable="false">https://trakteer.id/nursyah-jaya</string>
+    <string name="play_store" translatable="false">https://play.google.com/store/apps/details?id=com.nursyah.finance</string>
+    <string name="yes">Yes</string>
+    <string name="are_you_sure_to_delete">Are you sure to delete</string>
+    <string name="today">Today</string>
+    <string name="spending">Spending</string>
+    <string name="income">Income</string>
+    <string name="not_enough_money">You can\'t spending if you didn\'t have enough balance</string>
+    <string name="balance">balance</string>
+    <string name="Balance">Total balance</string>
+    <string name="Spend">Spend</string>
+    <string name="Income">Receive</string>
+    <string name="home">home</string>
+    <string name="stats">stats</string>
+    <string name="settings">settings</string>
+    <string name="transact">add</string>
+    <string name="version">version</string>
+    <string name="backup_data">Backup Data</string>
+    <string name="restore_data">Restore Data</string>
+    <string name="delete_data">Delete Data</string>
+    <string name="enable_storage_permission">Please enable storage permission</string>
+    <string name="confirm_backup_data">All data will be backup to your devices, are you sure</string>
+    <string name="confirm_restore_data">New data will be added, are you sure</string>
+    <string name="confirm_delete_data">All data will be erased, are you sure</string>
+    <string name="contribute_in_github">Contribute in Github</string>
+    <string name="donate_with_kofi">Donate with ko-fi</string>
+    <string name="donate_with_trakteer">Donate with trakteer</string>
+    <string name="share_with_friend">Share with friend</string>
+    <string name="want_to_support">want to support</string>
+    <string name="failed_to_parse_data">Failed to parse data, please try to delete data</string>
+    <string name="history">History</string>
+    <string name="confirm">Confirm</string>
+    <string name="backup_data_success">Backup Data Success</string>
+    <string name="backup_data_failed">Backup Data Failed</string>
+    <string name="allow_files_permission">Please allow access to manages files permission</string>
+    <string name="restore_data_success">Restore Data Success</string>
+    <string name="restore_data_failed">Restore Data Failed</string>
+    <string name="license">license</string>
+    <string name="open_source_license">OpenSource License</string>
+    <string name="data_not_valid">Data not valid</string>
+    <string name="delete_data_success">Delete data success</string>
+    <string name="privacy_policy" translatable="false">https://nursyah21.github.io/app/privacy_policy_finance</string>
+    <string name="year">year</string>
+    <string name="month">month</string>
+    <string name="week">week</string>
+    <string name="all_time">all time</string>
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+    <string name="how_to_use">how to use</string>
+    <string name="close">close</string>
+    <string name="how_to_use_content">
+        Finance app, is a simple financial management application to manage your spending and income\n\n
+
+        on home screen\n
+        1. Balance, here you can write down the money you have now and what you have allocated for your shopping needs. You can enter the number 0 if your funds turn out to be negative\n
+        2. Income, every time you get income you record it here\n
+        3. Spending, every time you spend your money you record it here\n
+        4. Income dan Spending for the initial number you cannot enter an initial value of 0\n
+        5. You can see a summary of your total shopping today and your shopping list today, sequentially according your shopping time\n\n
+
+        on stats screen\n
+        1. Here you will see statistics on spending and income that can be displayed based on all time, year, month, week\n
+        2. You can also see a summary of your total spending and expenses for the current month and the previous month\n
+        3. You can see all the history of spending and income here\n\n
+
+        on settings screen\n
+        1. Backup data, to backup all  existing data, the location of the stored data will be displayed on the screen. data stored in the form of csv\n
+        2. Restore data, to restore data that you have previously saved, the previous data will not be deleted, because the data is in the form of csv you can also edit the data\n
+        3. Delete data, to delete all data
+    </string>
+</resources>
