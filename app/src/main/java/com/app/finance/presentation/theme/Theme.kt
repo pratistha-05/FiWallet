@@ -32,6 +32,7 @@ val AlmostBlack = Color(0xff1F272D)
 val modifierScreen = Modifier.padding(12.dp)
 val cardModifier = Modifier
     .fillMaxWidth()
+    .padding(12.dp)
     .clip(RoundedCornerShape(20.dp))
 
 private val LightColors = lightColorScheme(

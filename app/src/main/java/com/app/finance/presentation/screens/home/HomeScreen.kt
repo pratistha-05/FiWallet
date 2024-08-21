@@ -3,11 +3,14 @@ package com.app.finance.presentation.screens.home
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -15,6 +18,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.KeyboardArrowUp
@@ -32,6 +36,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
@@ -62,7 +67,7 @@ fun HomeScreen(
     val scope = rememberCoroutineScope()
     homeViewModel.changeBalance(data)
 
-    Column(modifierScreen) {
+    Column() {
         Summary(
             onClick = { homeViewModel.changeBackdropState() },
             homeViewModel = homeViewModel
@@ -123,20 +128,41 @@ fun TodaySummary(
     val incomeTotal = Utils.totalDataString(totalData, "Income")
 
     Card(
-        modifier = cardModifier,
+        modifier = Modifier
+            .height(500.dp)
+            .fillMaxWidth(),
+        shape = RoundedCornerShape(
+            topStart = 30.dp,
+            topEnd = 30.dp,
+            bottomStart = 0.dp,
+            bottomEnd = 0.dp
+        ),
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.secondary,
-            contentColor = MaterialTheme.colorScheme.onSecondary
+            containerColor = Color.Transparent
         )
     ) {
-        Column(modifier = Modifier.padding(8.dp)) {
-            Text(text = stringResource(R.string.today))
-            Spacer(modifier = Modifier.height(10.dp))
-            Text(text = "${stringResource(R.string.spending)}: $spendingTotal")
-            Text(text = "${stringResource(R.string.income)}: $incomeTotal")
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(
+                    brush = Brush.linearGradient(
+                        colors = listOf(
+                            MaterialTheme.colorScheme.onSecondary,
+                            MaterialTheme.colorScheme.scrim
+                        )
+                    )
+                )
+        ) {
+            Column(modifier = Modifier.padding(20.dp)) {
+//                Text(text = stringResource(R.string.today))
+//                Spacer(modifier = Modifier.height(10.dp))
+//                Text(text = "${stringResource(R.string.spending)}: $spendingTotal")
+//                Text(text = "${stringResource(R.string.income)}: $incomeTotal")
+            }
         }
     }
 }
+
 
 @Composable
 fun Summary(
