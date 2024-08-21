@@ -8,4 +8,8 @@ object Constants {
   const val SETTINGS_STATE_DELETE = "delete"
   const val SETTINGS_STATE_RESTORE = "restore"
   const val SETTINGS_STATE_BACKUP = "backup"
+
+  enum class Action {
+    PAYMENTS, TRANSACT, ANALYTICS
+  }
 }

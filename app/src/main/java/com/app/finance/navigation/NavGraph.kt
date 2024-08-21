@@ -7,7 +7,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.navigation
 import com.google.accompanist.navigation.animation.AnimatedNavHost
 import com.google.accompanist.navigation.animation.composable
-import com.nursyah.finance.presentation.screens.home.HomeScreen
+import com.app.finance.presentation.screens.home.HomeScreen
 import com.nursyah.finance.presentation.screens.license.LicenseScreen
 import com.nursyah.finance.presentation.screens.settings.HowToUseScreen
 import com.nursyah.finance.presentation.screens.settings.SettingsScreen

@@ -1,4 +1,4 @@
-package com.nursyah.finance.presentation.screens.home
+package com.app.finance.presentation.screens.home
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable

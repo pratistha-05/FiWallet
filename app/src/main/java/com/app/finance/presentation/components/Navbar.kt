@@ -35,11 +35,6 @@ enum class ItemNav(
         itemIcon = R.drawable.ic_stats,
         itemRoute = MainDestination.Stats.route
     ),
-    ADD(
-        itemName = R.string.transact,
-        itemIcon = R.drawable.ic_close,
-        itemRoute = MainDestination.SettingsRoute.Settings.route
-    ),
     SETTINGS(
         itemName = R.string.settings,
         itemIcon = R.drawable.ic_close,
@@ -78,15 +73,7 @@ fun Navbar(
                     Icon(
                         painter = painterResource(id = it.itemIcon),
                         contentDescription = null,
-                        tint = Color.Black,
-                        modifier = if (it == ItemNav.ADD) {
-                            Modifier.rotate(45f)
-                                .background(color = Color.White, shape = RoundedCornerShape(20.dp))
-                                .padding(3.dp)
-                                .size(40.dp)
-                        } else {
-                            Modifier
-                        }
+                        tint = Color.White,
                     )
                 }
             )
