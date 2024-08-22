@@ -1,9 +1,8 @@
-package com.nursyah.finance.presentation
+package com.app.finance.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.camera.core.Camera
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -20,7 +19,6 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.BlendMode.Companion.Screen
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.NavHostController
@@ -31,8 +29,6 @@ import com.nursyah.finance.presentation.components.Navbar
 import com.nursyah.finance.presentation.theme.FinanceTheme
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.compose.foundation.layout.*
-import androidx.compose.material3.*
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.unit.dp
 
 @AndroidEntryPoint

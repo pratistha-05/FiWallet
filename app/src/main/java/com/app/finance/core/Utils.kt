@@ -13,7 +13,7 @@ import androidx.core.app.NotificationCompat
 import androidx.core.text.isDigitsOnly
 import com.nursyah.finance.R
 import com.nursyah.finance.db.model.Data
-import com.nursyah.finance.presentation.MainActivity
+import com.app.finance.presentation.MainActivity
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*

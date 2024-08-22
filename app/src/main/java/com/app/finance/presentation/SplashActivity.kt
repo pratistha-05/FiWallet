@@ -1,4 +1,4 @@
-package com.nursyah.finance.presentation
+package com.app.finance.presentation
 
 import android.annotation.SuppressLint
 import android.content.Intent

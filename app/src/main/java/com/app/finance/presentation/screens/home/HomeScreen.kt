@@ -77,7 +77,7 @@ fun HomeScreen(
 
         QuickAction( onClick = { homeViewModel.changeBackdropState() },)
 
-        TodaySummary()
+        TransactionSummary()
 
         Spacer(modifier = Modifier.height(15.dp))
 
@@ -119,49 +119,6 @@ fun HomeScreen(
 }
 
 
-@Composable
-fun TodaySummary(
-    viewModel: MainViewModel = hiltViewModel()
-) {
-    val totalData by viewModel.getDataToday().collectAsState(initial = emptyList())
-    val spendingTotal = Utils.totalDataString(totalData, "Spending")
-    val incomeTotal = Utils.totalDataString(totalData, "Income")
-
-    Card(
-        modifier = Modifier
-            .height(500.dp)
-            .fillMaxWidth(),
-        shape = RoundedCornerShape(
-            topStart = 30.dp,
-            topEnd = 30.dp,
-            bottomStart = 0.dp,
-            bottomEnd = 0.dp
-        ),
-        colors = CardDefaults.cardColors(
-            containerColor = Color.Transparent
-        )
-    ) {
-        Box(
-            modifier = Modifier
-                .fillMaxSize()
-                .background(
-                    brush = Brush.linearGradient(
-                        colors = listOf(
-                            MaterialTheme.colorScheme.onSecondary,
-                            MaterialTheme.colorScheme.scrim
-                        )
-                    )
-                )
-        ) {
-            Column(modifier = Modifier.padding(20.dp)) {
-//                Text(text = stringResource(R.string.today))
-//                Spacer(modifier = Modifier.height(10.dp))
-//                Text(text = "${stringResource(R.string.spending)}: $spendingTotal")
-//                Text(text = "${stringResource(R.string.income)}: $incomeTotal")
-            }
-        }
-    }
-}
 
 
 @Composable
